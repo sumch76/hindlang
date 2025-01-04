@@ -16,7 +16,11 @@ function getTokenProperties(token) {
   if (token === "barabar") {
     return { type: "VariableDeclaration", value: token };
   }
-
+  
+ if (token === "agar") return { type: "IfStatement", value: token };
+  if (token === "tab") return { type: "Then", value: token };
+  if (token === "warna") return { type: "Else", value: token };
+  
   return { type: "Identifier", value: token };
 }
 
